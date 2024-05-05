@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Sergio Wu CB3025691 e Leonardo de Lima CB3026655
 
-public class javaTP03 {
+public class TP03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Hora hora = new Hora();
