@@ -41,6 +41,6 @@ public class TP02Ex11 {
     
         System.out.println("O determinante da matriz é: " + determinante);
 
-        scanner.close();
+        
     }
 }
