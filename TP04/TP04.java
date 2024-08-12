@@ -2,7 +2,7 @@ package TP04;
 
 import java.util.Scanner;
 
-// Sergio Wu CB3025691 e Leonardo de Lima CB3026655
+// Sergio Wu CB302569
 
 public class TP04 {
     public static void main(String[] args) {

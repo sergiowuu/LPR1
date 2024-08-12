@@ -1,10 +1,7 @@
-package TP04;
 import java.util.Scanner;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-
-//Sergio Wu CB3025691
 
 public class Data {
     private int dia;
@@ -34,40 +31,41 @@ public class Data {
         }
     }
 
-    public void entraDia(int d) {
-        if (dataValida(d, this.mes, this.ano)) {
-            this.dia = d;
+    public int getDia() {
+        return this.dia;
+    }
+
+    public int getMes() {
+        return this.mes;
+    }
+
+    public int getAno() {
+        return this.ano;
+    }
+
+    // Setters
+    public void setDia(int dia) {
+        if (dataValida(dia, this.mes, this.ano)) {
+            this.dia = dia;
         } else {
             throw new IllegalArgumentException("dia inválido");
         }
     }
 
-    public void entraMes(int m) {
-        if (dataValida(this.dia, m, this.ano)) {
-            this.mes = m;
+    public void setMes(int mes) {
+        if (dataValida(this.dia, mes, this.ano)) {
+            this.mes = mes;
         } else {
             throw new IllegalArgumentException("Mês inválido");
         }
     }
 
-    public void entraAno(int a) {
-        if (dataValida(this.dia, this.mes, a)) {
-            this.ano = a;
+    public void setAno(int ano) {
+        if (dataValida(this.dia, this.mes, ano)) {
+            this.ano = ano;
         } else {
             throw new IllegalArgumentException("ano inválido");
         }
-    }
-
-    public int retDia() {
-        return this.dia;
-    }
-
-    public int retMes() {
-        return this.mes;
-    }
-
-    public int retAno() {
-        return this.ano;
     }
 
     public String mostra1() {
@@ -122,5 +120,10 @@ public class Data {
             default:
                 return 31;
         }
+    }
+
+    @Override
+    public String toString() {
+        return mostra1();
     }
 }
